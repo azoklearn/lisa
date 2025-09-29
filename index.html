@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Délices - Pâtisserie Artisanale</title>
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-letter">L</span>
+            </div>
+            <h1 class="preloader-title">Lisa Délices</h1>
+            <p class="preloader-subtitle">L'art de la pâtisserie artisanale...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span>L</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Lisa Délices</h1>
+                        <p>Pâtisserie Artisanale</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#creations" class="nav-link">Créations</a></li>
+                    <li><a href="#pricing" class="nav-link">Tarifs</a></li>
+                    <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Bouton Commander -->
+                <a href="#contact" class="btn-primary desktop-only">Commander</a>
+
+                <!-- Bouton Mobile -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-images">
+            <div class="hero-image active" style="background-image: url('images/plateaudessert.jpg');"></div>
+            <div class="hero-image" style="background-image: url('images/tartecitron.jpg');"></div>
+            <div class="hero-image" style="background-image: url('images/dessert.jpg');"></div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-name">Lisa Délices</span>
+                    <span class="hero-subtitle" id="hero-subtitle">L'Art de la Pâtisserie Artisanale</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Découvrez un univers gourmand où chaque création raconte une histoire. 
+                    Des pâtisseries d'exception, façonnées avec passion et savoir-faire artisanal, 
+                    pour éveiller vos sens et créer des moments inoubliables.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Commander Maintenant ✨</a>
+                    <a href="#creations" class="btn-secondary">Découvrir le Menu</a>
+                </div>
+            </div>
+            
+            <!-- Indicateurs d'images -->
+            <div class="hero-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Découvrir</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-content">
+                <!-- Texte -->
+                <div class="about-text">
+                    <div class="section-header">
+                        <p class="section-subtitle">Mon Histoire</p>
+                        <h2 class="section-title">La Passion de la Pâtisserie</h2>
+                    </div>
+                    
+                    <div class="about-story">
+                        <p>
+                            <span class="first-letter">B</span>onjour, je suis Lisa, 
+                            pâtissière passionnée de 18 ans. Mon aventure culinaire a commencé 
+                            dans la cuisine familiale, où j'ai découvert la magie des saveurs et textures 
+                            qui se transforment sous mes doigts.
+                        </p>
+                        
+                        <p>
+                            Autodidacte passionnée, j'ai développé mes compétences grâce à ma curiosité naturelle 
+                            et mes expériences pratiques. J'ai créé ma propre signature : l'alliance parfaite 
+                            entre tradition artisanale et créativité moderne.
+                        </p>
+                        
+                        <p>
+                            Chaque création que je confectionne est une œuvre d'art comestible, pensée pour 
+                            émerveiller vos papilles et créer des souvenirs inoubliables. Ma philosophie ? 
+                            Utiliser uniquement des ingrédients d'exception, respecter les techniques ancestrales 
+                            tout en apportant une touche d'innovation.
+                        </p>
+                    </div>
+                    
+                    <!-- Statistiques -->
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Créations uniques</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Fait maison</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Valeurs -->
+                    <div class="values">
+                        <div class="value">
+                            <div class="value-icon">🌟</div>
+                            <div class="value-content">
+                                <h4>Qualité Exceptionnelle</h4>
+                                <p>Ingrédients premium et techniques artisanales</p>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <div class="value-icon">💚</div>
+                            <div class="value-content">
+                                <h4>Passion & Authenticité</h4>
+                                <p>Chaque création reflète mon amour du métier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="about-image">
+                    <img src="images/dessert.jpg" alt="Zaza en cuisine" class="about-img">
+                    <div class="about-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Créations Section -->
+    <section id="creations" class="creations section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-subtitle">Mes Créations</p>
+                <h2 class="section-title">Une Symphonie de Saveurs</h2>
+                <p class="section-description">
+                    Découvrez mes créations signature, élaborées avec passion et savoir-faire
+                </p>
+            </div>
+            
+            <!-- Filtres -->
+            <div class="creation-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="gateaux">Gâteaux</button>
+                <button class="filter-btn" data-filter="tartes">Tartes</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+            
+            <!-- Grille de créations -->
+            <div class="creations-grid">
+                <div class="creation-item" data-category="gateaux">
+                    <div class="creation-image">
+                        <img src="images/dessert.jpg" alt="Gâteau Signature" loading="lazy">
+                    </div>
+                    <div class="creation-info">
+                        <h4>Gâteau Signature</h4>
+                        <p>Délicieuse mousse au chocolat associée à des fruits rouges frais, sur une base biscuitée croustillante</p>
+                        <div class="creation-details">
+                            <span class="price">45€</span>
+                            <span class="category">Gâteau</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-item" data-category="tartes">
+                    <div class="creation-image">
+                        <img src="images/tartecitron.jpg" alt="Tarte Citron Meringuée" loading="lazy">
+                    </div>
+                    <div class="creation-info">
+                        <h4>Tarte Citron Meringuée</h4>
+                        <p>Le grand classique revisité avec une meringue parfaitement dorée et un curd citron onctueux</p>
+                        <div class="creation-details">
+                            <span class="price">35€</span>
+                            <span class="category">Tarte</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-item" data-category="tartes">
+                    <div class="creation-image">
+                        <img src="images/fruitrouge.jpg" alt="Tarte aux Fruits Rouges" loading="lazy">
+                    </div>
+                    <div class="creation-info">
+                        <h4>Tarte aux Fruits Rouges</h4>
+                        <p>Crème pâtissière vanille généreuse sublimée par des fruits rouges de saison sélectionnés</p>
+                        <div class="creation-details">
+                            <span class="price">38€</span>
+                            <span class="category">Tarte</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-item" data-category="desserts">
+                    <div class="creation-image">
+                        <img src="images/meringue.jpg" alt="Meringues Artisanales" loading="lazy">
+                    </div>
+                    <div class="creation-info">
+                        <h4>Meringues Artisanales</h4>
+                        <p>Meringues légères et aérienne, croquantes à l'extérieur et fondantes à l'intérieur</p>
+                        <div class="creation-details">
+                            <span class="price">25€</span>
+                            <span class="category">Dessert</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creation-item" data-category="desserts">
+                    <div class="creation-image">
+                        <img src="images/plateaudessert.jpg" alt="Plateau de Desserts" loading="lazy">
+                    </div>
+                    <div class="creation-info">
+                        <h4>Plateau de Desserts</h4>
+                        <p>Assortiment gourmand de nos meilleures créations pour partager des moments sucrés</p>
+                        <div class="creation-details">
+                            <span class="price">60€</span>
+                            <span class="category">Assortiment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-subtitle">Nos Tarifs</p>
+                <h2 class="section-title">Des Créations pour Tous les Moments</h2>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Pack Découverte -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pack Découverte</h3>
+                        <div class="price">35€</div>
+                        <p>Parfait pour goûter nos spécialités</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1 tarte individuelle</li>
+                        <li>✓ 6 meringues assorties</li>
+                        <li>✓ Emballage cadeau</li>
+                        <li>✓ Conseil personnalisé</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary full-width">Commander</a>
+                </div>
+                
+                <!-- Pack Gourmand -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Populaire</div>
+                    <div class="pricing-header">
+                        <h3>Pack Gourmand</h3>
+                        <div class="price">65€</div>
+                        <p>Idéal pour les occasions spéciales</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1 gâteau 6-8 personnes</li>
+                        <li>✓ 1 tarte aux fruits</li>
+                        <li>✓ Décoration personnalisée</li>
+                        <li>✓ Livraison gratuite</li>
+                        <li>✓ Consultation création</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary full-width">Commander</a>
+                </div>
+                
+                <!-- Pack Prestige -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pack Prestige</h3>
+                        <div class="price">120€</div>
+                        <p>Pour les événements d'exception</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Plateau desserts 10-12 pers</li>
+                        <li>✓ Pièce montée sur mesure</li>
+                        <li>✓ Design exclusif</li>
+                        <li>✓ Service traiteur</li>
+                        <li>✓ Suivi personnalisé</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary full-width">Commander</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-subtitle">Témoignages</p>
+                <h2 class="section-title">Ce que disent mes clients</h2>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Les créations de Zaza sont tout simplement exceptionnelles ! Sa tarte au citron meringuée est un pur délice. Service impeccable et qualité irréprochable."</p>
+                        <div class="testimonial-author">
+                            <strong>Marie Dubois</strong>
+                            <span>Cliente fidèle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"J'ai commandé un gâteau personnalisé pour l'anniversaire de ma fille. Le résultat a dépassé toutes nos attentes ! Magnifique et délicieux."</p>
+                        <div class="testimonial-author">
+                            <strong>Pierre Martin</strong>
+                            <span>Papa ravi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Une artiste de la pâtisserie ! Chaque création est une œuvre d'art. Je recommande vivement pour tous vos événements spéciaux."</p>
+                        <div class="testimonial-author">
+                            <strong>Sophie Leclerc</strong>
+                            <span>Organisatrice d'événements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation testimonials -->
+            <div class="testimonials-nav">
+                <button class="testimonial-btn active" data-slide="0"></button>
+                <button class="testimonial-btn" data-slide="1"></button>
+                <button class="testimonial-btn" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="section-subtitle">Contact</p>
+                <h2 class="section-title">Créons Ensemble Votre Moment Sucré</h2>
+                <p class="section-description">
+                    Contactez-moi pour discuter de votre projet gourmand
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lisazaza54@icloud.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>07 68 35 38 25</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Atelier</h4>
+                            <p>123 Rue des Délices<br>75016 Paris</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun-Sam: 9h-19h<br>Sur rendez-vous</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire de contact -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Votre nom</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="gateau-personnalise">Gâteau personnalisé</option>
+                            <option value="tarte-artisanale">Tarte artisanale</option>
+                            <option value="plateau-desserts">Plateau de desserts</option>
+                            <option value="evenement">Événement spécial</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                        <label for="service">Type de prestation</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Décrivez votre projet</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary full-width">
+                        Envoyer la demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span>L</span>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Lisa Délices</h3>
+                            <p>Pâtisserie Artisanale</p>
+                        </div>
+                    </div>
+                    <p>Créatrice de moments sucrés depuis 3 ans. Chaque création est une histoire gourmande unique.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#creations">Créations</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#creations">Gâteaux personnalisés</a></li>
+                        <li><a href="#creations">Tartes artisanales</a></li>
+                        <li><a href="#creations">Plateaux de desserts</a></li>
+                        <li><a href="#contact">Événements</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <p>📧 lisazaza54@icloud.com</p>
+                        <p>📱 07 68 35 38 25</p>
+                        <p>📍 123 Rue des Délices, Paris</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lisa Délices. Tous droits réservés. Créé avec 💙</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="back-to-top" class="back-to-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
